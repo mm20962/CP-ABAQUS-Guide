@@ -273,12 +273,12 @@ function dream2abq(voxFileName, inpFileName)
     fprintf(inpFile,'\n*End Instance\n**');
     
     %% Create the reference nodes the displacement/force controls are applied.
-    fprintf(inpFile,'\n*Node\n1,%f,%f,%f\n',middle_nodex,0,-1);
-    fprintf(inpFile,'\n*Node\n2,%f,%f,%f\n',-1,0,middle_nodez);
-    fprintf(inpFile,'\n*Node\n3,%f,%f,%f\n',middle_nodez,-1,middle_nodez);
-    fprintf(inpFile,'*Nset, nset=refnodez\n 1,\n');
-    fprintf(inpFile,'*Nset, nset=refnodex\n 2,\n');
-    fprintf(inpFile,'*Nset, nset=refnodey\n 3,\n');
+    %fprintf(inpFile,'\n*Node\n1,%f,%f,%f\n',middle_nodex,0,-1);
+    %fprintf(inpFile,'\n*Node\n2,%f,%f,%f\n',-1,0,middle_nodez);
+    %fprintf(inpFile,'\n*Node\n3,%f,%f,%f\n',middle_nodez,-1,middle_nodez);
+    %fprintf(inpFile,'*Nset, nset=refnodez\n 1,\n');
+    %fprintf(inpFile,'*Nset, nset=refnodex\n 2,\n');
+    %fprintf(inpFile,'*Nset, nset=refnodey\n 3,\n');
     
 %    %% Applying periodic boundary conditions
 %    % Node sets defining the faces, edges and veritices of the RVE are
